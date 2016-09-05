@@ -1,6 +1,5 @@
-{backmatter}
 
-# Appendix C: About Gernot Starke
+# About Gernot Starke
 
 {width=15%,float=right}
 ![](images/42-backmatter/innoQ-logo.png)
