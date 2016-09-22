@@ -1,0 +1,30 @@
+description = 'copy FAQ files over from arc42-in-practice project'
+
+File faqDir = file('../arc42-in-practice/manuscript/07_faq/')
+File imageDir = file ('../arc42-inpractice/manuscript/images/faq')
+
+task listFAQ << {
+
+
+    FileTree faqFiles = fileTree( faqDir).include('**/*.md')
+
+
+    println "Contents of $faqDir.name"
+    faqFiles.collect { relativePath(it) }.sort().each { println it }
+}
+
+task copyFAQ(dependsOn: "copyFAQImageFiles") {
+  println "copy all FAQ files from arc42-in-Practice project"
+
+}
+task copyFAQImageFiles(dependsOn: 'copyFAQMarkdownFiles') {
+  println "copying FAQ image files"
+}
+
+task copyFAQMarkdownFiles(type: Copy) {
+  println "copying FAQ markdown files"
+
+  from faqDir
+  into 'manuscript/07-faq'
+  include '**/*.md'
+}
