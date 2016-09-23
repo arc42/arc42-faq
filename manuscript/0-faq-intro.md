@@ -1,7 +1,5 @@
 # Introduction to arc42 FAQ
 
-> **May the force of the proper word and diagram be with you.**
-
 Here you find answers to the most common questions regarding arc42,
 the proven, practical (free!) standard for documenting and communicating
 software architecture. These FAQ have been extracted from the book
@@ -17,14 +15,13 @@ software architecture. These FAQ have been extracted from the book
 arc42 is based on years of experience and used successfully since 2005 in many companies and
 organizations in different application domains.
 
-First of all arc42 is a **template for architecture documentation**.
-
-It answers the following two questions in a pragmatic way, but can be tailored to your specific needs:
+First of all arc42 is a template for architecture documentation. 
+It answers the following two questions in a pragmatic way:
 
 * _What_ should we document/communicate about our architecture?
 * _How_ should we document/communicate?
 
-Figure 1 gives you the big picture: It shows a (slightly simplified)
+The diagram below gives you the big picture: It shows a (slightly simplified)
 overview of the structure of arc42.
 
 ![Figure 1](images/arc42-overview.jpg)
