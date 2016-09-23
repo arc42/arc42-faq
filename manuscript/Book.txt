@@ -1,11 +1,9 @@
-{frontmatter}
-
-
 
 {mainmatter}
 
 %% ==================================
-01_intro/01_0_intro.md
+
+0-faq-intro.md
 
 %% ==================================
 %% the FAQ
