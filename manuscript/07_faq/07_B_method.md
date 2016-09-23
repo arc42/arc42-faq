@@ -1,7 +1,7 @@
 {pagebreak}
 
 {#section-vii-B}
-## VII.B Questions on methodology
+## B Questions on methodology
 
 
 {#q-B-1}

@@ -1,7 +1,7 @@
 {pagebreak}
 
 {#section-vii-A}
-## VII.A General questions
+## A General questions
 
 {#q-A-1}
 #### Question A-1: What does the _42_ mean?

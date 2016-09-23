@@ -1,3 +1,3 @@
 
 {#section-vii-K}
-## VII.K Questions on customizing arc42
+## K Questions on customizing arc42

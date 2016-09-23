@@ -2,4 +2,4 @@
 
 
 {#section-vii-J}
-## VII.J Questions on managing documentation
+## J Questions on managing documentation
