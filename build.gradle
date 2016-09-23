@@ -1,30 +1,48 @@
+defaultTasks 'info'
+
 description = 'copy FAQ files over from arc42-in-practice project'
 
 File faqDir = file('../arc42-in-practice/manuscript/07_faq/')
 File imageDir = file ('../arc42-inpractice/manuscript/images/faq')
 
-task listFAQ << {
-
-
-    FileTree faqFiles = fileTree( faqDir).include('**/*.md')
-
-
-    println "Contents of $faqDir.name"
-    faqFiles.collect { relativePath(it) }.sort().each { println it }
-}
 
 task copyFAQ(dependsOn: "copyFAQImageFiles") {
   println "copy all FAQ files from arc42-in-Practice project"
 
 }
-task copyFAQImageFiles(dependsOn: 'copyFAQMarkdownFiles') {
+
+
+task copyFAQImageFiles(type: Copy, dependsOn: 'copyFAQMarkdownFiles') {
   println "copying FAQ image files"
+
+  from imageDir
+  into 'images/faq'
 }
 
 task copyFAQMarkdownFiles(type: Copy) {
-  println "copying FAQ markdown files"
+  println "copying and filtering FAQ markdown files"
 
   from faqDir
-  into 'manuscript/07-faq'
+  into 'manuscript/07_faq'
   include '**/*.md'
+}
+
+task info << {
+    println """\n
+*** =============================== ***
+*** This is the arc42-FAQ copy task ***
+*** =============================== ***
+
+It will do the following stuff:
+
+1.) copy all markdown files containing FAQs.
+2.) removing heading and section numbers, which are explicitely included
+in the arc42-in-practice book.
+3.) copy all images or diagrams required.
+
+To do this, it requires the git repositories for 'arc42-in-practice'
+and 'arc42-FAQ' checked out next to each other.
+
+Start it with 'gradle copyFAQ'
+    """
 }
