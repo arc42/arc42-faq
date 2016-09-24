@@ -1,34 +1,68 @@
-defaultTasks 'info'
 
 description = 'copy FAQ files over from arc42-in-practice project'
 
-File faqDir = file('../arc42-in-practice/manuscript/07_faq/')
-File imageDir = file ('../arc42-inpractice/manuscript/images/faq')
+defaultTasks 'info'
+
+File faqSrcDir = file('../arc42-in-practice/manuscript/07_faq/')
+File imageSrcDir = file ('../arc42-in-practice/manuscript/images/faq')
+
+File faqTargetDir = file('manuscript/07_faq')
+File imageTargetDir = file('manuscript/images/faq')
 
 
-task copyFAQ(dependsOn: "copyFAQImageFiles") {
+task copyFAQ(dependsOn: "inPracticeDirsExist") << {
   println "copy all FAQ files from arc42-in-Practice project"
 
-}
-
-task copyFAQImageFiles(type: Copy, dependsOn: 'copyFAQMarkdownFiles') {
-  println "copying FAQ image files"
-
-  from imageDir
-  into 'images/faq'
-}
-
-task copyFAQMarkdownFiles(type: Copy) {
-  println "copying and filtering FAQ markdown files"
-
-  from faqDir
-  into 'manuscript/07_faq'
-  include '**/*.md'
-
-  filter { String line ->
+  println "Copying and filtering FAQ markdown files from ${faqSrcDir}"
+  copy {
+    from faqSrcDir
+    into faqTargetDir
+    include '**/*.md'
+    filter { String line ->
         line.contains('VII.') ? line.replaceAll("VII.", "") : line
     }
+  }
+
+  println "Copying and filtering image files from ${imageSrcDir}"
+  copy {
+    from imageSrcDir
+    into imageTargetDir
+    include '**/*.png'
+    include '**/*.jpg'
+  }
 }
+
+task clean(type: Delete) << {
+  println "Deleting target directories $imageTargetDir and $faqTargetDir"
+  delete imageTargetDir, faqTargetDir
+  followSymlinks = false
+}
+
+// the following task contains no action, but the checks
+// happen at CONFIGURATION time...
+task inPracticeDirsExist {
+  // if directories in "arc42-in-practice" don't exist, abort...
+
+  print "\nChecking if arc42-in-practice directories exist..."
+  if (!imageSrcDir.exists()) {
+    throw new GradleException("Exception:\nRequired directory ${imageSrcDir.absolutePath} not found.\n")
+  }
+  print "..."
+  if (!faqSrcDir.exists()) {
+    throw new GradleException("Exception:\nRequired directory ${faqSrcDir.absolutePath} not found.\n")
+  }
+  println "... successful.\n"
+}
+
+
+task listImages() << {
+  FileCollection collection
+  println "Contents of $imageSrcDir.absolutePath"
+  collection = files{ imageSrcDir.listFiles() }
+  collection.collect { relativePath(it) }.sort().each { println it }
+}
+
+
 
 task info << {
     println """\n
@@ -46,6 +80,7 @@ in the arc42-in-practice book.
 To do this, it requires the git repositories for 'arc42-in-practice'
 and 'arc42-FAQ' checked out next to each other.
 
-Start it with 'gradle copyFAQ'
-    """
+You can execute it by 'gradle copyFAQ'
+"""
+
 }
