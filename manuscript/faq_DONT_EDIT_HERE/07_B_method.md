@@ -13,7 +13,7 @@
 
 **Longer answer**
 
-:
+: <t.b.d>
 
 {#q-B-2}
 #### Question B-2: Does arc42 prescribe or enforce specific notations?

@@ -1,8 +1,8 @@
 
 ### 7. Deployment view
 
-{#q-C-7-2}
-#### Question C-7-2: What does the deployment view show?
+{#q-C-7-1}
+#### Question C-7-1: What does the deployment view show?
 
 <t-b-d>
 

@@ -84,4 +84,11 @@ these tree.
 
 ### 11. Risks and technical debt
 
+{#q-C-11-1}
+#### Question C-11-1: What are _risks_ and _technical debt_?
+
+<t.b.d.>
+
+
 ### 12. Glossary
+<t.b.d.>
