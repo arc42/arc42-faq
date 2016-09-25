@@ -11,7 +11,7 @@ File imageTargetDir = file('manuscript/images/faq')
 
 
 task copyFAQ(dependsOn: "inPracticeDirsExist") << {
-  println "copy all FAQ files from arc42-in-Practice project"
+  description "copy all FAQ files from arc42-in-Practice project"
 
   println "Copying and filtering FAQ markdown files from ${faqSrcDir}"
   copy {
@@ -32,15 +32,13 @@ task copyFAQ(dependsOn: "inPracticeDirsExist") << {
   }
 }
 
-task clean(type: Delete) << {
+task clean(type: Delete) {
   println "Deleting target directories $imageTargetDir and $faqTargetDir"
   delete imageTargetDir, faqTargetDir
-  followSymlinks = false
+  followSymlinks = true
 }
 
-// the following task contains no action, but the checks
-// happen at CONFIGURATION time...
-task inPracticeDirsExist {
+task inPracticeDirsExist << {
   // if directories in "arc42-in-practice" don't exist, abort...
 
   print "\nChecking if arc42-in-practice directories exist..."
@@ -57,11 +55,14 @@ task inPracticeDirsExist {
 
 task listImages() << {
   FileCollection collection
-  println "Contents of $imageSrcDir.absolutePath"
+  println "\nContents of $imageSrcDir.absolutePath"
   collection = files{ imageSrcDir.listFiles() }
   collection.collect { relativePath(it) }.sort().each { println it }
-}
 
+  println "\nContents of $imageTargetDir.absolutePath"
+  collection = files{ imageTargetDir.listFiles() }
+  collection.collect { relativePath(it) }.sort().each { println it }
+}
 
 
 task info << {
