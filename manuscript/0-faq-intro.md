@@ -1,4 +1,7 @@
-# Introduction to arc42 FAQ
+# Introduction
+
+C>These (English) FAQ are currently in a very early state.
+C>I'm translating them from their German original as quickly as I can...  
 
 Here you find answers to the most common questions regarding arc42,
 the proven, practical (free!) standard for documenting and communicating
@@ -15,7 +18,7 @@ software architecture. These FAQ have been extracted from the book
 arc42 is based on years of experience and used successfully since 2005 in many companies and
 organizations in different application domains.
 
-First of all arc42 is a template for architecture documentation. 
+First of all arc42 is a template for architecture documentation.
 It answers the following two questions in a pragmatic way:
 
 * _What_ should we document/communicate about our architecture?
