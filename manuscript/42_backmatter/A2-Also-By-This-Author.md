@@ -16,7 +16,7 @@ It contains the software architecture documentation of several concrete systems,
 
 This practical guide shows how you can effectively apply the practical and well-proven arc42 template to design, develop and document your software architecture.
 
-{width=20%,float=inside}
+{width=20%}
 ![](images/42-backmatter/arc42-in-practice-cover-400x565.png)
 
 It contains more than 200 practical tips how to improve your architecture communication and documentation:
@@ -38,7 +38,7 @@ You find it on [https://leanpub.com/arc42inpractice](https://leanpub.com/arc42in
 The German original of the previously mentioned eBook... for those who both understand German _and_ like
 to hold printed books in their hands...
 
-{width=20%,float=inside}
+{width=20%}
 ![](images/42-backmatter/arc42-in-Aktion-Cover-300px.png)
 
 You get it at your local bookstore or [online](http://www.amazon.de/arc42-Aktion-Praktische-Tipps-Architekturdokumentation/dp/3446448012).
