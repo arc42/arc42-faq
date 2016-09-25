@@ -6,28 +6,29 @@
 0-faq-intro.md
 
 %% ==================================
-%% the FAQ
+%% the FAQ - copied over from arc42-in-practice
+%% therefore they should not be changed here!
 %% ==================================
-07_faq/07_0_faq.md
-07_faq/07_A_general.md
-07_faq/07_B_method.md
+faq_DONT_EDIT_HERE/07_0_faq.md
+faq_DONT_EDIT_HERE/07_A_general.md
+faq_DONT_EDIT_HERE/07_B_method.md
 
-07_faq/07_C_arc42_1-2.md
-07_faq/07_C_section-3.md
-07_faq/07_C_section-4.md
-07_faq/07_C_section-5.md
-07_faq/07_C_section-6.md
-07_faq/07_C_section-7.md
-07_faq/07_C_section-8.md
-07_faq/07_C_sections-9-12.md
+faq_DONT_EDIT_HERE/07_C_arc42_1-2.md
+faq_DONT_EDIT_HERE/07_C_section-3.md
+faq_DONT_EDIT_HERE/07_C_section-4.md
+faq_DONT_EDIT_HERE/07_C_section-5.md
+faq_DONT_EDIT_HERE/07_C_section-6.md
+faq_DONT_EDIT_HERE/07_C_section-7.md
+faq_DONT_EDIT_HERE/07_C_section-8.md
+faq_DONT_EDIT_HERE/07_C_sections-9-12.md
 
-07_faq/07_D_modeling.md
-07_faq/07_E_agile.md
-07_faq/07_F_tools.md
-07_faq/07_G_versioning.md
-07_faq/07_H_traceability.md
-07_faq/07_J_management.md
-07_faq/07_K_customizing.md
+faq_DONT_EDIT_HERE/07_D_modeling.md
+faq_DONT_EDIT_HERE/07_E_agile.md
+faq_DONT_EDIT_HERE/07_F_tools.md
+faq_DONT_EDIT_HERE/07_G_versioning.md
+faq_DONT_EDIT_HERE/07_H_traceability.md
+faq_DONT_EDIT_HERE/07_J_management.md
+faq_DONT_EDIT_HERE/07_K_customizing.md
 
 
 {backmatter}

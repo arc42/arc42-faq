@@ -6,7 +6,7 @@ defaultTasks 'info'
 File faqSrcDir = file('../arc42-in-practice/manuscript/07_faq/')
 File imageSrcDir = file ('../arc42-in-practice/manuscript/images/faq')
 
-File faqTargetDir = file('manuscript/07_faq')
+File faqTargetDir = file('manuscript/faq_DONT_EDIT_HERE')
 File imageTargetDir = file('manuscript/images/faq')
 
 
