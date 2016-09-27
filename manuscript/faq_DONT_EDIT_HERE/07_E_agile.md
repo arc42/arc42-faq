@@ -9,21 +9,6 @@
 <t.b.d.>
 
 {#q-E-2}
-#### Question E-2: Shall our team make arc42 part of the definition of done (DoD)? 
-
-<t.b.d.>
-
-{#q-E-}
-#### Question E-:
-
-<t.b.d.>
-
-{#q-E-}
-#### Question E-:
-
-<t.b.d.>
-
-{#q-E-}
-#### Question E-:
+#### Question E-2: Shall our team make arc42 part of the definition of done (DoD)?
 
 <t.b.d.>

@@ -19,8 +19,20 @@ another number.
 {#q-A-2}
 #### Question A-2: What's the license?
 
-Creative-Commons Sharealike..
-<t.b.d.>
+[Creative-Commons Sharealike 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Under this license, you're free to:
+
+* Share: copy and redistribute the material in any medium or format
+* Adapt: remix, transform, and build upon the material for any purpose, even commercially.
+
+We, the licensors, (Gernot Starke and Peter Hruschka, the creators of arc42)
+cannot (and surely will not) revoke these freedoms as long as you follow the license terms.
+
+You must give appropriate credit, provide a link to the license, and indicate if changes to arc42 were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+If you remix, transform, or build upon material from arc42, you must distribute your contributions under the same license as the original.
+
 
 {#q-A-3}
 #### Question A-3: What's the pricing model of arc42?
@@ -34,13 +46,15 @@ In the D.A.CH. region (Germany, Austria, Switzerland), arc42 is used
 by many organizations and corporations in various industries. We don't
 know any statistically relevant numbers, though...
 
-In these countries, alternatives like Simon Browns' [SA4D/C4]() model
+In these countries, alternatives like Simon Browns'
+[SA4D/C4](http://simonbrown.je/#softwarearchitecture) model
 are not well-established.
 
-In the international scene, we guess that arc42 is way behind [SA4D].
+In the international scene, we guess that arc42 is way behind SA4D/C4.
 
-The template is available in English and Spanish, further translations
-are most welcome.
+The template is available in English, German and Spanish. Further translations
+are most welcome (but will not be provided by the current maintainers of arc42).
+
 
 {#q-A-5}
 #### Question A-5: What's the target audience of architecture documentation?
@@ -59,20 +73,41 @@ depends on the specific context. Some typical targets for such documentation:
 * Software developers who actually implement within the system.
 * Software developers of neighbour systems, who need to know about
 external interfaces and/or their technical details.
+* Software architects who need to prepare, shepard or implement architectural decisions.
+* Operators or administrators of software systems, who either need to configure
+the system for specific infrastructure needs, optimize it or perform administrative
+tasks requiring architectural understanding. This often includes security relevant
+tasks, like firewall or database settings.
+* Technical managers who organize maintenance or evolution of the system.
+* Auditors or reviewers, who valid, current and accurate architectural information
+to assess or evaluate the system.
+* Testers and QA-engineers who need to plan, impelement or perform
+whitebox-, performance- or security testing.
+* Consumers of services offered by the system, in case they need to understand
+additional details apart from the interface (blackbox) specification.
 
-<t.b.completed>
+In our opinion, software architects should maintain an overview of current
+stakeholders together with their specific needs for architectural information.
 
 {#q-A-6}
 #### Question A-6: What are possible alternatives to arc42?
 
-<t.b.d.>
+* Simon Brown's [SA4D/C4](http://simonbrown.je/#softwarearchitecture) model.
+You find a brief introduction in one of his [blog posts](https://www.voxxed.com/blog/2014/10/simple-sketches-for-diagramming-your-software-architecture/)
+* [The View-Model](https://www.amazon.de/dp/B0046XS3RO/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+of Paul Clements et. al from the Software Engineering Institute.
+From our point of view, their approach is _very_ heavyweight and can become quite
+formal when applied to real-world projects.
+* In case your organization has created its own "Software Architecture Documentation Template": It should contain quality requirements, a scope/context section and
+information about building blocks and crosscutting concepts. If it does, you're pretty
+close to arc42 anyway... 
 
 {#q-A-7}
 #### Question A-7: For what kinds of systems is arc42 applicable?
 **Short answer**
 
 : Due to its flexibility concerning tools, processes and extend, arc42
-is well-suited for all kinds of IT-systems (small to large, simple to complex,
+  is well-suited for all kinds of IT-systems (small to large, simple to complex,
   all kinds of implementation technologies).
 
 **Longer answer**
@@ -84,13 +119,13 @@ specific needs in such cases.
 Let domain experts or appropriate auditors review the resulting documentation
 structure.
 
-For all other _normal_ systems you can apply arc42: Depending on risk,
-complexity, scope or size you should assess both the arc42 structure
-and your toolchain for fitness regarding your specific purpose.
+  For all other _normal_ systems you can apply arc42: Depending on risk,
+  complexity, scope or size you should assess both the arc42 structure
+  and your toolchain for fitness regarding your specific purpose.
 
-We successfully worked with dozens of clients in small, medium and
-large organizations on many different systems with arc42 - and it never
-let us down :-)
+  We successfully worked with dozens of clients in small, medium and
+  large organizations on many different systems with arc42 - and it never
+  let us down :-)
 
 {#q-A-8}
 #### Question A-8: How can I contribute or report bugs in arc42?
