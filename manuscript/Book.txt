@@ -5,6 +5,13 @@
 
 0-faq-intro.md
 
+%% the Table-of-Questions is copied over from
+%% the arc42-in-practice book,
+%% therefore they should not be changed here!
+%% ==================================
+1-table-of-questions-intro.md
+generated-DONT_EDIT/generated-table-of-questions.md
+
 %% ==================================
 %% the FAQ - copied over from arc42-in-practice
 %% therefore they should not be changed here!

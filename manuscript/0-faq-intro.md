@@ -1,7 +1,7 @@
 # Introduction
 
-C>These (English) FAQ are currently in a very early state.
-C>I'm translating them from their German original as quickly as I can...  
+C>These (English) FAQ are currently in a quite early state.
+C>I'm translating them from their German original as fast as I can...  
 
 Here you find answers to the most common questions regarding arc42,
 the proven, practical (free!) standard for documenting and communicating
