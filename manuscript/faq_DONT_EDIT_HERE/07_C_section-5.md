@@ -1,4 +1,5 @@
 
+{#faq-sect-C-5}
 ### 5. Building block view
 
 {#q-C-5-1}
@@ -23,7 +24,7 @@ include those in the building block view.
   (arc42-section 7)!.
 
 {#q-C-5-3}
-#### Question C-5-3: How does sourcecode relate to building blocks?
+#### Question C-5-3: How does source code relate to building blocks?
 
 <t.b.d.>
 
@@ -68,6 +69,6 @@ include those in the building block view.
 <t-b-d>
 
 {#q-C-5-12}
-#### Question C-5-12: What kind of building blocks don't I need to documentor describe?
+#### Question C-5-12: What kind of building blocks don't I need to document or describe?
 
 <t-b-d>

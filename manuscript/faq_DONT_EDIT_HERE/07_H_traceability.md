@@ -14,14 +14,14 @@ to be referenced in any part of the architecture/solution
 documentation.
 
 From a more pragmatical architectural (arc42) perspective,
-traceabilty can also refer
+traceability can also refer
 to the understandability or explanation of important or fundamental architecture or
 solution decisions: "We took the decision Dec-X because of
 the requirements Req-Y."
 
 
 {#q-H-2}
-#### Question H-2: Shall we strive for traceabilty in our documentation?
+#### Question H-2: Shall we strive for traceability in our documentation?
 
 **Short answer**
 
@@ -50,3 +50,11 @@ quality of your technical and/or architecture documentation.
 remain quite stable over time, and won't need to be updated often. Many source code changes don't affect level-1!
 * Defer documentation of volatile parts: In case you can anticipate structural changes or volatility in certain parts of your system, leave the documentation of these parts as abstract and high-level as possible until these parts have reached a stable state.
 * Prefer documenting "crosscutting concepts" (arc42 section 8) over detailed building blocks (section 5) or runtime scenarios (section 6).
+
+
+A>#### Your question has not been answered?
+A>Tell us:
+A>
+A>* via [email](mailto:info@arc42.de) to info@arc42.de or
+A>* on our [github issue tracker](https://github.com/arc42/arc42-template/issues) at https://github.com/arc42/arc42-template/issues.
+A>* or on [Twitter (@arc42Tipps)](https://twitter.com/arc42Tipps).

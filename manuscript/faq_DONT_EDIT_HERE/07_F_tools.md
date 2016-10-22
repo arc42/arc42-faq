@@ -103,3 +103,53 @@ concerning teamwork, robustness, versioning and artifact generation.
 
   Actually, compliance to any specific UML standard is very
   often overrated.
+
+
+{#q-F-7}
+#### Question F-7: Can we use arc42 with the [Atlassian Confluence](https://www.atlassian.com/software/confluence) wiki?
+
+[^confluence]: The name and logo of Confluence is copyrighted by Atlassian Software. arc42 is neither affiliated with or in any way sponsored by Atlassian Corporation.
+
+Yes - it's a (near-perfect) combination: Confluence[^confluence] is a powerful, yet easy-to-use
+collaboration platform, a "wiki-on-steroids".
+
+You can easyli map the arc42 structure on Confluence pages, and even use
+predefined templates to setup the complete arc42 structure in a breath
+(see [question F-8 (Confuence tools)](#q-F-8) for details on available tooling).
+
+T>I (Gernot) used Confluence to generate various stakeholder-specific output from a single Confluence "arc42 repository", which saved a lot of documentation effort, as the development team needed only to maintain this single source-of-truth.
+
+In Confluence, you can _tag_ (label, mark) pages, so it becomes very simple to add
+arbitrary meta-information to certain parts of your documentation. Use this e.g. to
+add version/release-specific information, or to distinguish between "already-implemented"
+and "planned-for-the-future" information.
+
+Confluence does not (!) provide out-of-the-box diagramming features, but numerous
+tools are available to the rescue, see [question F-9 (Confluence Diagramming tools)](#f-F-9) for details).
+
+{#q-F-8}
+#### Question F-8: What tools can I use to setup arc42 in Confluence?
+
+There a a few options to simplify the setup of the arc42 structure within your Confluence:
+
+* The [Networked-Assets ATC macro](https://marketplace.atlassian.com/plugins/com.networkedassets.plugins.space-blueprint/server/overview) to insert the arc42 template into any Confluence space.
+* The [smartics Blueprints for arc42](https://marketplace.atlassian.com/plugins/de.smartics.atlassian.confluence.smartics-projectdoc-confluence-arc42/server/overview)
+* (Within the near future...) You can get a Confluence space generated out of the arc42 _Golden Master_ from the arc42-template github repository. We're currently working hard on making this available for download. Please [contact us](mailto:gs@gernotstarke.de) for a pre-release version if you're interested.  
+
+See [question F-9 (Diagrams in Confluence)](#q-F-9) for an overview of diagramming tools available for Confluence.
+
+{#q-F-9}
+#### Question F-9: How can I create diagrams in Confluence?
+
+* You can create and maintain your diagrams with any modeling tool and export your diagrams in jpg or png. Concluence can import these files, and will even keep a history of updates, if you ever upload newer versions. Beware: This requires maximal manual effort...
+* You can create and maintain diagrams with a Confluence graphics plugin. I (Gernot) have positive experience with the following:
+  * [Gliffy](https://www.gliffy.com/products/confluence-plugin/), a well-known plugin for creating arbitrary diagrams within Confluence pages. The editor is complety integrated into the web browser. Supports different versions of diagrams, stable and robust, requires a commercial license.
+  * [Draw.io](https://support.draw.io/display/DFCS), a powerful browser-based graphics editor, also available as Confluence plugin. I (Gernot) have used the plain-browser version of draw.io - which can be used completely offline and export diagrams to various formats.
+
+
+  A>#### Your question has not been answered?
+  A>Tell us:
+  A>
+  A>* via [email](mailto:info@arc42.de) to info@arc42.de or
+  A>* on our [github issue tracker](https://github.com/arc42/arc42-template/issues) at https://github.com/arc42/arc42-template/issues.
+  A>* or on [Twitter (@arc42Tipps)](https://twitter.com/arc42Tipps).

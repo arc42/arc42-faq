@@ -1,8 +1,8 @@
 
-[^to-generation]: Table generated: October/11/2016
+[^to-generation]: Table generated: Oktober/22/2016
 
 {width="90%"}
-|ID/Link |Questions    |
+|ID/Link |Question    |
 |-------|-------------------|
 |[Question A-1](#q-A-1) |What does the _42_ mean? |
 |-------|-------------------|
@@ -34,7 +34,7 @@
 |-------|-------------------|
 |[Question B-6](#q-B-6) |How to document external interfaces? |
 |-------|-------------------|
-|[Question B-7](#q-B-7) |Where to put links to external systems ("neighbours") documentation? |
+|[Question B-7](#q-B-7) |Where to put links to external systems ("neighbors") documentation? |
 |-------|-------------------|
 |[Question B-8](#q-B-8) |What is a blackbox / the blackbox template? |
 |-------|-------------------|
@@ -56,15 +56,21 @@
 |-------|-------------------|
 |[Question C-1-1](#q-C-1-1) |How extensive shall I describe the requirements of the system? |
 |-------|-------------------|
-|[Question C-1-2](#q-C-1-2) |What are quality goals? |
+|[Question C-1-2](#q-C-1-2) |What are quality goals (aka quality attributes)? |
 |-------|-------------------|
 |[Question C-1-3](#q-C-1-3) |Why does arc42 propose a stakeholder table? |
 |-------|-------------------|
 |[Question C-1-4](#q-C-1-4) |What shall be included in a stakeholder table? |
 |-------|-------------------|
+|[Question C-1-5](#q-C-1-5) |What are the _expected deliverables_ in the stakeholder table? |
+|-------|-------------------|
 |[Question C-2-1](#q-C-2-1) |What are constraints? |
 |-------|-------------------|
-|[Question C-2-2](#q-C-2-2) |What kind of constraints shall I document? |
+|[Question C-2-2](#q-C-2-2) |What types of constraints exist? |
+|-------|-------------------|
+|[Question C-2-3](#q-C-2-3) |What kind of constraints shall I document? |
+|-------|-------------------|
+|[Question C-2-4](#q-C-2-4) |Can/shall we negotiate constraints? |
 |-------|-------------------|
 |[Question C-3-1](#q-C-3-1) |What is the context (scope)? |
 |-------|-------------------|
@@ -74,11 +80,19 @@
 |-------|-------------------|
 |[Question C-3-4](#q-C-3-4) |What is the "technical context"? |
 |-------|-------------------|
-|[Question C-3-5](#q-C-3-5) |In which cases shall I document the "technical context"? |
+|[Question C-3-5](#q-C-3-5) |In which cases shall I document the "business context"? |
+|-------|-------------------|
+|[Question C-3-6](#q-C-3-6) |In which cases shall I document the "technical context"? |
+|-------|-------------------|
+|[Question C-3-7](#q-C-3-7) |How can I simplify documentation of the "business context"? |
+|-------|-------------------|
+|[Question C-3-8](#q-C-3-8) |Shall I document risks or problems in the context? |
 |-------|-------------------|
 |[Question C-4-1](#q-C-4-1) |What is the "solution strategy"? |
 |-------|-------------------|
 |[Question C-4-2](#q-C-4-2) |How to document the "solution strategy"? |
+|-------|-------------------|
+|[Question C-4-3](#q-C-4-3) |Can you provide examples for the _solution strategy_? |
 |-------|-------------------|
 |[Question C-5-1](#q-C-5-1) |What is a "building block"? |
 |-------|-------------------|
@@ -130,7 +144,7 @@
 |-------|-------------------|
 |[Question C-8-2](#q-C-8-2) |Our arc42 section 8 (on concepts) is a melting pot of information we couldn't put elsewhere? How can we keep an overview? |
 |-------|-------------------|
-|[Question C-8-3](#q-C-8-3) |How shall I describe my business/domain model? |
+|[Question C-8-3](#q-C-8-3) |How shall I describe my business-/domain model? |
 |-------|-------------------|
 |[Question C-8-4](#q-C-8-4) |Are there any general rules how to describe a _concept_? |
 |-------|-------------------|
@@ -210,7 +224,7 @@
 |-------|-------------------|
 |[Question H-1](#q-H-1) |What does _traceability_ mean (with arc42)? |
 |-------|-------------------|
-|[Question H-2](#q-H-2) |Shall we strive for traceabilty in our documentation? |
+|[Question H-2](#q-H-2) |Shall we strive for traceability in our documentation? |
 |-------|-------------------|
 |[Question H-3](#q-H-3) |How can I keep architecture documentation in sync with source code? |
 |-------|-------------------|

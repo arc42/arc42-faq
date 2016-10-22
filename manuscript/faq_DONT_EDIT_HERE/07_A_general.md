@@ -9,7 +9,30 @@
 [_Hitchhikers Guide to the Galaxy_](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy)
 by the famous [Douglas Adams](http://www.theguardian.com/books/2011/feb/03/douglas-adams-42-hitchhiker).
 
-In his book the number _42_ is the "answer to the meaning of life, the universe, and everything" - calculated by a _very_ big computer over a _very very_ long time.
+In his book the number _42_ is the "answer to the meaning of life, the universe, and everything" - calculated by a _very_ big computer over a _very very_ long time:
+
+{icon=heart-o}
+G>"All right," said Deep Thought. "The Answer to the Great Question..."
+G>
+G>"Yes..!"
+G>
+G>"Of Life, the Universe and Everything..." said Deep Thought.
+G>
+G>"Yes...!"
+G>
+G>"Is..." said Deep Thought, and paused.
+G>
+G>"Yes...!"
+G>
+G>"Is..."
+G>
+G>"Yes...!!!...?"
+G>
+G>"Forty-two," said Deep Thought, with infinite majesty and calm.”
+G>
+G> **― Douglas Adams, The Hitchhiker's Guide to the Galaxy**
+G>
+G> quoted from [GoodReads](http://www.goodreads.com/quotes/tag/42)
 
 Software developers like to use 42 as _magic_ number, that's a number
 without any real significance, which you could replace by any other number.
@@ -100,7 +123,7 @@ From our point of view, their approach is _very_ heavyweight and can become quit
 formal when applied to real-world projects.
 * In case your organization has created its own "Software Architecture Documentation Template": It should contain quality requirements, a scope/context section and
 information about building blocks and crosscutting concepts. If it does, you're pretty
-close to arc42 anyway... 
+close to arc42 anyway...
 
 {#q-A-7}
 #### Question A-7: For what kinds of systems is arc42 applicable?
@@ -113,7 +136,8 @@ close to arc42 anyway...
 **Longer answer**
 
 : For highly-critical systems, (e.g. safety-critical systems, where health
-or life are at stake), you need to seriously consider documentation requirements.
+or life are at stake), you need to seriously consider documentation requirements. In such cases, arc42 might not be the adequate approach (see [question A-8](#q-A-8)).
+
 We recommend to a-priori evaluate arc42, and enhance it according to your
 specific needs in such cases.
 Let domain experts or appropriate auditors review the resulting documentation
@@ -128,8 +152,30 @@ structure.
   let us down :-)
 
 {#q-A-8}
-#### Question A-8: How can I contribute or report bugs in arc42?
+#### Question A-8: In which cases shall we NOT use arc42?
+
+If you're creating safety-critical systems, e.g. medical
+or avionics systems, where health or life are at stake,
+you will most likely encounter comprehensive
+and formal specification and documentation requirements,
+that arc42 will most likely not fulfill.
+
+Many of the hints and tips we give for economical documentation
+might not be valid in such cases.
+
+
+{#q-A-9}
+#### Question A-9: How can I contribute or report bugs in arc42?
 
 * We maintain the template itself at [Github](https://github.com/arc42). You can fork the repository and send us pull requests...
 * You can open issues in this repo
 * You can [email us](mailto:info@arc42.de), or contact us over [Twitter](https://twitter.com/arc42Tipps).
+
+
+
+A>#### Your question has not been answered?
+A>Tell us:
+A>
+A>* via [email](mailto:info@arc42.de) to info@arc42.de or
+A>* on our [github issue tracker](https://github.com/arc42/arc42-template/issues) at https://github.com/arc42/arc42-template/issues.
+A>* or on [Twitter (@arc42Tipps)](https://twitter.com/arc42Tipps).

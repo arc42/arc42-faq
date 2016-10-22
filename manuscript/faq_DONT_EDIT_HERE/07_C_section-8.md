@@ -13,7 +13,7 @@
 <t-b-d>
 
 {#q-C-8-3}
-#### Question C-8-3: How shall I describe my busines/domain model?
+#### Question C-8-3: How shall I describe my business-/domain model?
 
 <t-b-d>
 

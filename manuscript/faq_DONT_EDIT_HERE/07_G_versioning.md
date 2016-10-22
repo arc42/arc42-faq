@@ -51,3 +51,11 @@ in a diagram (some modeling tools support this feature).
 #### Question G-4: How can I describe several _variants_ of a system?
 
 <t.b.d.>
+
+
+A>#### Your question has not been answered?
+A>Tell us:
+A>
+A>* via [email](mailto:info@arc42.de) to info@arc42.de or
+A>* on our [github issue tracker](https://github.com/arc42/arc42-template/issues) at https://github.com/arc42/arc42-template/issues.
+A>* or on [Twitter (@arc42Tipps)](https://twitter.com/arc42Tipps).

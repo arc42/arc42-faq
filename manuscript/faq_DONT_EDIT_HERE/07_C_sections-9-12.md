@@ -68,7 +68,8 @@ topics, which itself are refined again. Quality scenarios form the leaves of
 these tree.
 
   * Standards for product quality, like ->ISO 25010, propose _generic_
-  quality trees.
+  quality trees. You find this _generic_ quality tree in
+  [question C-1-2 (quality goals)](#q-C-1-2).
   * The quality of a specific system can be described by a _specific_
   quality tree (see the example below).
 
@@ -92,3 +93,12 @@ these tree.
 
 ### 12. Glossary
 <t.b.d.>
+
+
+
+A>#### Your question has not been answered?
+A>Tell us:
+A>
+A>* via [email](mailto:info@arc42.de) to info@arc42.de or
+A>* on our [github issue tracker](https://github.com/arc42/arc42-template/issues) at https://github.com/arc42/arc42-template/issues.
+A>* or on [Twitter (@arc42Tipps)](https://twitter.com/arc42Tipps).

@@ -24,7 +24,7 @@ as creators of arc42 in case you use or modify the template...
 standardized structure of arc42 has a high recall value - many people are
 accustomed to it.
 
-** Longer answer**
+**Longer answer**
 
 : Keep arc42 modifications to subsections and leave the high-level structure unchanged.
 
