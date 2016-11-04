@@ -171,17 +171,15 @@ Consider an example: In the following listing you find the description of a simp
 ~~~~~~~~
 @startuml
 G -> G : init
-
 G -> H : sendEmail()
 G <--H : reply X
 G -> I : blabla( X )
 I -> H : check( X )
-
 I <--H : ok
-
 @enduml
 ~~~~~~~~
 
+{width=50%}
 ![PlantUML sequence diagram example](images/faq/F-Tools/plantuml-example.png)
 
 Charming: Such textual descriptions can be merged and versioned like any other source code!
@@ -201,12 +199,12 @@ You may have a look at:
 
 ~~~~~~~~
 title Authentication Sequence
-
 Alice->Bob: Authentication Request
 note right of Bob: Bob thinks about it
 Bob->Alice: Authentication Response
 ~~~~~~~~
 
+{width=70%}
 ![WebSequenceDiagram example](images/faq/F-Tools/wsd-authentication-example.png)
 
 
