@@ -42,9 +42,39 @@ UML has some additional options (e.g. state transition or object diagrams) to de
 {#q-C-6-4}
 #### Question C-6-4: What are partial scenarios?
 
-<t-b-d>
+Partial scenarios describe parts or extracts of complete scenarios or processes. They show only interesting, difficult, risky or important aspects of some _greater_ process.
+
+Concentrating on these _essentials_ brings several benefits:
+
+* You avoid trivial parts of scenarios
+* You work more economically by leaving out unneccessary, non-important or low-priority aspects. That saves time/effort in creating and maintaining documentation!
+* Smaller scenarios might be easier to understand (if (!) you make very clear which parts of the overall scenario you left out!)
+
+A risk of partial scenarios might be consumers that don't understand the prerequisites or preconditions of a partial scenario. Use annotations within your diagrams to explicitly clarify such required knowledge or facts.
+
+In the figure shown below, you find a complete scenario first, and a nice partial scenario as an extract afterwards.
+
+{width=50%}
+![Long and mostly boring scenario](images/faq/C-Sections/long-and-mostly-boring.png)
+
+As you see, the first interactions seem quite trivial. Therefore, we can simple leave them out in a partial scenario:
+
+
+{width=30%}
+![Corresponding partial scenario](images/faq/C-Sections/short-and-interesting.png)|
+
 
 {#q-C-6-5}
 #### Question C-6-5: Which scenarios shall I describe or document?
 
-<t-b-d>
+The following types of scenarios are candidates for runtime scenarios:
+
+* The general case (aka the _rule_) of the most important use cases, features or functions.
+* Important interactions with external systems, neighbours or user categories.
+* Dynamic behavior of important external interfaces.
+* Interactions that affect important quality goals or requirements.
+* Error or failure conditions that might influence overall system behavior.
+* Bootstrap-, startup or shutdown procedures, especially in distributed systems.
+* Interactions that somehow deviate from _normal_ stakeholder expectation, especially deviate from developer expectation.
+* Interactions that work in non-standard ways.
+* Scenarios or processes that are subject to timing constraints

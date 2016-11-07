@@ -3,8 +3,7 @@
 {#section-vii-D}
 ## D Questions on modeling
 
-Here we collect questions regarding UML and other modeling notations, plus general
-questions regarding understandability and consistency of models.
+Here we collect questions regarding UML and other modeling notations, plus general questions regarding understandability and consistency of models.
 
 {#q-D-0}
 #### Question D-0: Why do I need a _model_? I have source code.
@@ -65,16 +64,18 @@ architecture:
 * runtime behavior or runtime scenarios (runtime view)
 * deployment or infrastructure
 
-See also [question B-3](#q-B-3).
+See also [question B-3 (UML)](#q-B-3).
 
 
 {#q-D-3}
 #### Question D-3: How can I use UML to communicate a hierarchy of building blocks?
 
-Component- and package diagrams can communicate hierarchies, as both UML components
-and packages can be _nested_.
+Component- and package diagrams can communicate hierarchies, as both UML components and packages can be _nested_.
 
-<t.b.d: example>
+For examples, see
+
+* [question B-10 (building block hierarchy)](#q-B-10)
+* [question C-5-11 (hierarchy and arc42 sections)](#q-C-5-11)
 
 {#q-D-4}
 #### Question D-4: How can I describe interfaces with UML?
@@ -115,35 +116,42 @@ the component BarA handles that interaction.
 {width="50%"}
 ![Ports to show mapping between blackbox and its refinement](images/faq/ports-for-mapping.png)
 
-* I (Gernot) often used ports to denote the transmission protocoll for a particular
-interface: For an interface (e.g. _inFoo_) I can show that its available over http,
-https and ftp by attaching the same interface ball/socket to several ports,
-each port representing a distinct "access option" (ftp, http, https)...
+* I (Gernot) often used ports to denote the transmission protocoll for a particular interface: For an interface (e.g. _inFoo_) I can show that its available over http, https and ftp by attaching the same interface ball/socket to several ports, each port representing a distinct "access option" (ftp, http, https)...
 
   Note: This is _not_ what the original inventors of UML intented...
 
 {width="50%"}
 ![Ports to show access channels or protocols](images/faq/ports-and-channels.png)
 
-* In hardware- and deployment diagrams, ports can represent input/output channels,
-network adapters, virtual networks, IP-addresses or similar .
+* In hardware- and deployment diagrams, ports can represent input/output channels, network adapters, virtual networks, IP-addresses or similar .
 
 {#q-D-6}
 #### Question D-6: How can I improve the _understandability_ of my diagrams/models?
 
-Understandable diagrams contain 5-15 elements with their relationships - _normal_
-people simply cannot grasp more than that number.
+Understandable diagrams contain 5-15 elements with their relationships - _normal_ people simply cannot grasp more than that number.
 
-If you have overloaded or large diagrams, reduce the number of elements
-by _abstraction_:
+If you have overloaded or large diagrams, reduce the number of elements by _abstraction_:
 
-* Aggregate several elements into a named blackbox. These elements should be
-cohesive, they should somehow _belong together_. The criteria should be
-an explicit decision.
-* Refrain from showing loads of details, e.g. attributes or methods of single classes.
-Those details can often be left to source code.
-* Especially in runtime scenarios, don't always start with the beginning of a scenario,
-but _dive-right-into_ the interesting parts.
+* Aggregate several elements into a named blackbox. These elements should be cohesive, they should somehow _belong together_. The criteria should be an explicit decision.
+* Refrain from showing loads of details, e.g. attributes or methods of single classes. Those details can often be left to source code.
+* Especially in runtime scenarios, don't always start with the beginning of a scenario, but _dive-right-into_ the interesting parts.
+
+{#q-D-7}
+#### Question D-7: How can I reduce the number of elements in a component /building block diagram?
+
+See [question D-6 (understandability)](#q-D-6).
+
+
+{#q-D-8}
+#### Question D-8: How can I improve the consistency of models?
+
+Consistency (or homogeneity) implies recognizability and often understandability. We like to explain it with the term "(inner) order"
+
+Consistent systems or models treat identical situations in the same manner, coherent or uniform.
+
+Consistency in models includes topics like layout, color, naming or uniform usage of symbols.
+
+See also [question D-6 (understandability)](#q-D-6)
 
 
 A>#### Your question has not been answered?

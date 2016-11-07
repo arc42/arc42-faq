@@ -1,27 +1,58 @@
+{pagebreak}
 
-### 9. Architecture decisions
+### 9. Architectural decisions
+
+In software engineering literature you find both "architecture decision" and "architectural decision".
 
 {#q-C-9-1}
 #### Question C-9-1: What kind of decisions shall I describe or document?
 
-<t-b-d>
+Describe or document the following kind of decisions:
+
+* risky
+* with expensive consequences
+* with long-lasting effects
+* affecting either
+  * a large number of stakeholders
+  * very special or important stakeholders
+* that took a long time or much effort to decide
+* astonishing
+
+>(document) architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques.
+>
+>Quoted from [Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
 
 {#q-C-9-2}
 #### Question C-9-2: How can I document an architectural decision?
 
-<t-b-d>
+* Write a blog for your decisions, every decisions becomes a blog post.
+* Use a text format similar to an (Alexandrian) pattern, like explained in [question C-9-3 (Architecture Decision Record)](#q-C-9-3).
+* For important decisions, the following topics might be interesting:
+  * subject of the decision
+  * affected stakeholders
+  * decision criteria (with priorities)
+  * alternatives
+  * evaluation of alternatives for the various criteria
+  * who took the decision?
+  * reason for chosing _this_ alternative in favor of others
 
 {#q-C-9-3}
 #### Question C-9-3: What's an _Architecture Decision Record_ (ADR)?
 
-<t-b-d>
+In [2011 Michael Nygard proposed](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions) to document important architecture decisions in the following pattern-like format:
+
+* Title: A short phrase with an ID, e.g. "ADR 9: LDAP for Multitenant Integration"
+* Context: Forces at play, including technological, political, social, and project organizational. Forces might be conflicting.
+* Decision: How do we deal with these forces, what do we do.
+* Status: A decision may be "proposed" (if stakeholders haven't yet agreed), or "accepted" (once it is agreed). Later it might be marked "deprecated" or "superseded" (you might include a reference to its replacement).
+* Consequences: What happens after the decision has been applied. All consequences should be listed here, not just the "positive" ones. A particular decision may have positive, negative, and neutral consequences.
+
+The ADR format lacks decision criteria, which I (Gernot) sometimes regard as really important... but maybe I'm prejudiced.
 
 {#q-C-9-4}
 #### Question C-9-4: How can we handle a _large number_ of architecture decisions?
 
-Create a blog (RSS-feed) and write a brief entry for your important decisions.
-Tag those with labels (e.g.: frontend, backend, SAP-interface or similar),
-so stakeholders can _filter_ them.
+Create a blog (RSS-feed) and write a brief entry for your important decisions. Tag those with labels (e.g.: frontend, backend, SAP-interface or similar), so stakeholders can _filter_ them.
 
 Such a blog shows the history of your system quite well. You can combine
 the blog with the idea of _architecture decision records_ (see [question C-9-3](#q-C-9-3)).
