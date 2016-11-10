@@ -3,40 +3,39 @@
 {#section-vii-E}
 ## E Questions on arc42 and agile methods
 
-The Agile Manifesto says: "Working software over comprehensive documentation".
-It does **not** say "no documentation".  
+The Agile Manifesto says: "Working software over comprehensive documentation". It does **not** say "no documentation".  
 
 {#q-E-1}
 #### Question E-1: Does arc42 work with Scrum, Kanban or other lean/agile approaches?
 
-Yes, it surely does. arc42 is supposed to be used "on demand" - you provide only
-the type or amount of information required for your specific documentation purpose.
+Yes, it surely does. arc42 is supposed to be used "on demand" - you provide only the type or amount of information required for your specific documentation purpose.
 
-This interpretation fits nicely with lean and agile approaches - where you shall
-avoid _waste_ and focus on fulfilling requirements... arc42 helps you to fulfill
-your documentation requirements easily in a pre-structured and well-thought-out way.
+This interpretation fits nicely with lean and agile approaches - where you shall avoid _waste_ and focus on fulfilling requirements... arc42 helps you to fulfill your documentation requirements easily in a pre-structured and well-thought-out way.
 
 
 {#q-E-2}
 #### Question E-2: Shall our team make arc42 part of the definition of done (DoD)?
 
+Yes, of course: If documentation is not part of the DoD, then it surely won't be done.
 
-<t.b.d.>
+Remember: arc42 proposes lean, economical and compact documentation that can be incrementally or iteratively enhanced.
 
 {#q-E-3}
 #### Question E-3: How can arc42 help us in reducing documentation effort?
 
-<t.b.d.>
+* Document crosscutting concepts instead of too many building blocks.
+* Use abstractions in the building block view and runtime view.
+
 
 {#q-E-4}
 #### Question E-4: We use Scrum. How can we integrate arc42 into our sprints?
 
-<t.b.d.>
+Documentation shall be part of your Definition-of-Done. Therefore arc42 is _automatically_ included in Scrum processes.
 
 {#q-E-5}
 #### Question E-5: In agile projects, what kind of information shall we write down and what shall we communicate orally?
 
-<t.b.d.>
+Imagine you're a future stakeholder who then needs to work on the system (implement, architect, deploy, test, operate, monitor or other). Then ask yourself what information you need to have...
 
 {#q-E-6}
 #### Question E-6: In agile projects, can we skip documentation for a while and focus only on implementing?

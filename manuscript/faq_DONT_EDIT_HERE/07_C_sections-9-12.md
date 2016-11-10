@@ -57,6 +57,7 @@ Create a blog (RSS-feed) and write a brief entry for your important decisions. T
 Such a blog shows the history of your system quite well. You can combine
 the blog with the idea of _architecture decision records_ (see [question C-9-3](#q-C-9-3)).
 
+{pagebreak}
 
 ### 10. Quality scenarios
 
@@ -109,21 +110,38 @@ these tree.
 
 
 {#q-C-10-4}
-#### Question C-10-4: Are there samples for quality scenarios?
+#### Question C-10-4: Are there examples for quality scenarios?
 
-<t-b-d>
 
+* A new price calculation rule can be added to the pricing engine within 4 hours.
+* The daily sales report for a single product category is generated within 10 seconds.
+* When storage devices fail, the system gracefully shuts down (instead of crashing uncontrollably).
+* The web client requires <5MB per browser session.
+* Should the system run out of memory while processing the xyz algorithm, it will not crash, but will report the situation to an administrative user, stop the xyz process and return control to the interactive user within 30 seconds.
+ 
 
 ### 11. Risks and technical debt
 
 {#q-C-11-1}
 #### Question C-11-1: What are _risks_ and _technical debt_?
 
-<t.b.d.>
+**Short answer**: The currently known problems.
+
+**Longer answer**
+
+: The known risks (things that might become problems) and problems in the system, its related organizational, operational and development processes. They can refer to source code, structures, concepts,
+decisions and all other aspects of the system.
+
+
+T>It's useful for development teams to have an overview of currently known risks and problems, so it can actively _manage_ the development and evolution of the system.
 
 
 ### 12. Glossary
-<t.b.d.>
+
+You should ensure that all participating people have a _common_ understanding of the important business (and technical) terminology which they use in context with the system.
+
+The glossary is one manifestation of the general rule of "better explicit than implicit".
+
 
 
 
