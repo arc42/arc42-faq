@@ -14,17 +14,13 @@ available which we failed to mention...
 {#q-F-1}
 #### Question F-1: What tools are well-suited for arc42?
 
-This is a classical _it depends_ type of question. Ask three different people,
-get at least five different (and most likely conflicting) answers...
+This is a classical _it depends_ type of question. Ask three different people, get at least five different (and most likely conflicting) answers...
 
-* As arc42 documentation should always be a combination of text, tables and diagrams,
-a combination of different tools will often be a better choice than trying to get everything
-from a single tool (although tool vendors will tell you a different story)
-* Often, (UML) modeling tools come with an abundance of functions and _very_ limited usability.
-Their learning curve is high and might frustrate many.
-* Still - I usually prefer a _real_ modeling tool over a pure graphics editor, for their
-better model consistency.
-
+* As arc42 documentation should always be a combination of text, tables and diagrams, a combination of different tools will often be a better choice than trying to get everything from a single tool (although tool vendors will tell you a different story)
+* Often, (UML) modeling tools come with an abundance of functions and _very_ limited usability. Their learning curve is high and might frustrate many. Overall, team acceptance tends to be low. Despite these usabilty shortcomigs we usually prefer _real_ modeling tools over a pure graphics editor, especially for their better model consistency.
+* Text processors (like Microsoft Word(R) or Open/Libre-Office) are _omnipresent_ (practically all stakeholders can use them), but developers and other techies often _don't love them_. Text processing tools provide limited team- and collaboration features, no real diff/merge, difficult to automate and are difficult to integrate with other tools. Nevertheless arc42 works with this category of tools without hassle.
+* Plaintext-based approaches (like Markdown or AsciiDoc) in combination with graphics-tools (for smaller systems) or modelling tools (for medium to large systems) allow for documentation _close-to-source-code_ and a high degree of automatability - therefore they tend to enjoy high acceptance with development teams.
+* We love the combination of wiki plus graphics- or modelling tool. You can generate stakeholder-specific artifacts or pdf from modern wiki systems (like Confluence(R)).
 
 {#q-F-2}
 #### Question F-2: What are useful criteria for selecting a toolset for arc42?
@@ -45,9 +41,36 @@ also in methodical questions.
 {#q-F-3}
 #### Question F-3: Can I automatically include important code artifacts in arc42 documentation?
 
-At best, integrated with out automatic build system?
+**Short answer**: Never (!) copy/paste code into your documentation - as it will be outdated before you hit the save key.
 
-<t.b.d.>
+**Longer answer** (for AsciiDoc):
+
+You can include code fragments be the following scheme:
+
+    [source,groovy]
+    ----
+    include::{sourcedir}/Sample.groovy[lines=1;7..-1]
+    ----
+
+Instead of explicitely giving the line numbers in the include statements, you can annotate the corresponding source files with comment tags, as shown in the following example:
+
+    class Sample {
+       // tag::helloMethod[]
+       String hello() {
+         'Asciidoc rules!'
+       }
+       // end::helloMethod[]
+     }
+
+and then reference this snippet in your documentation as follows:
+
+    [source,groovy]
+    ----
+    include::Sample.groovy[tags=helloMethod]
+    ----
+
+See also the awesome [blogpost from mrhaki](http://mrhaki.blogspot.de/2014/08/awesome-asciidoc-include-only-certain.html) and [another on partial includes](http://mrhaki.blogspot.de/2014/04/awesome-asciidoc-include-partial-parts.html)
+
 
 
 {#q-F-4}
@@ -93,7 +116,7 @@ your modeling tool:
 
 **Longer answer**
 
-: We have, at least until October 2016, not gotten to know
+: We have, at least until November 2016, not gotten to know
 any free modeling tool that can really compete with commercial
 tools with respect to robustness, useability, feature completeness and availability-of-know-how.
 Before you go for any free modeling tool,
@@ -212,7 +235,7 @@ Bob->Alice: Authentication Response
 
 
 {#q-F-11}
-#### Can I use [PlantUML](http://plantuml.com/) for building block / component diagrams?
+#### Question F-10: Can I use [PlantUML](http://plantuml.com/) for building block / component diagrams?
 
 **Short answer**
 
@@ -226,7 +249,7 @@ Bob->Alice: Authentication Response
   In PlantUML you can give _formating hints_, but the autolayout algorithms decide for themselves wether they can apply your suggestions or ignore them. I (Gernot) tried numerous times for real-world situations - and was always really unhappy with the results.  
 
   From my experience, static diagrams, like class- or component diagrams, look well only in hello-world like situations...
-  
+
 
 A>#### Your question has not been answered?
 A>Tell us:

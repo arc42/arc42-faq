@@ -38,22 +38,24 @@ Documentation shall be part of your Definition-of-Done. Therefore arc42 is _auto
 Imagine you're a future stakeholder who then needs to work on the system (implement, architect, deploy, test, operate, monitor or other). Then ask yourself what information you need to have...
 
 {#q-E-6}
-#### Question E-6: In agile projects, can we skip documentation for a while and focus only on implementing?
+#### Question E-6: In agile projects, can we skip (defer) documentation for a while and focus only on implementing?
 
-<t.b.d.>
+In theory, yes. In practice such a deferral means that this documentation will never ever be created - and stakeholders might need to dig deep into source code to gather the appropriate information.
 
+We urge you - document economically (short, brief, compact), but do this continously.
 
 {#q-E-7}
 #### Question E-7: What are the most important tips for documentation in agile projects?
 
-<t.b.d.>
+* Even in a Scrum-team, appoint a person responsible for documentation. We like to call her/him the "The Docu-Gardener", whos' tasks shall be:
+    1. care for the adequate form and content and
+    2. proactively search for unnecessary or outdated parts and remove them.
+  Please note: care does not mean your gardener shall create all content by her- or himself, but identify appropriate producers within the team or among associated stakeholders.
+* Document economically (“Less is often more”):  We really believe that documentation can be helpful and ease development work - but only in an extend and degree appropriate for the system and its stakeholders.
+* Clarify appropriateness and needs through early feedback: The type of your documentation should be appropiate with respect to the system, the affected people, domain, risks, criticality, effort/cost and possibly even other factors.
+* Focus on explanation and rationale, not only facts: Most facts about a software system can be found in its source code - but not their explanation, reasoning and rationale.
+* Rate requirements higher than principles.
 
-
-{#q-E-8}
-#### Question E-8: How can we use arc42 with multiple Scrum-teams and Scrum-of-Scrums?
-
-
-<t.b.d.>
 
 
 A>#### Your question has not been answered?
