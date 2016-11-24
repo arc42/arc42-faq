@@ -207,8 +207,8 @@ In case you want or need to save documentation effort, you have some good opport
 
 Tendencially avoid documenting lower-level building blocks.
 
-{#q-C-5-12}
-#### Question C-5-12: What kind of building blocks shall I document or specify?
+{#q-C-5-13}
+#### Question C-5-13: What kind of building blocks shall I document or specify?
 
 This is the opposite of [question C-5-12 (blocks you don't need to document)](#q-C-5-12).
 

@@ -1,8 +1,8 @@
 
-[^to-generation]: Table generated: Oktober/22/2016
+[^to-generation]: Table generated: November/24/2016
 
 {width="90%"}
-|ID/Link |Question    |
+|ID/Link |Questions    |
 |-------|-------------------|
 |[Question A-1](#q-A-1) |What does the _42_ mean? |
 |-------|-------------------|
@@ -104,7 +104,7 @@
 |-------|-------------------|
 |[Question C-5-5](#q-C-5-5) |Can I refine a group of building blocks together? |
 |-------|-------------------|
-|[Question C-5-6](#q-C-5-6) |How can I document building blocks? |
+|[Question C-5-6](#q-C-5-6) |How can I document or specify building blocks? |
 |-------|-------------------|
 |[Question C-5-7](#q-C-5-7) |How shall I document building blocks for non-object-oriented systems? |
 |-------|-------------------|
@@ -116,7 +116,9 @@
 |-------|-------------------|
 |[Question C-5-11](#q-C-5-11) |How does the hierarchy of building blocks relate to the arc42 sections (5.1, 5.2 etc.)? |
 |-------|-------------------|
-|[Question C-5-12](#q-C-5-12) |What kind of building blocks don't I need to document or describe? |
+|[Question C-5-12](#q-C-5-12) |What kind of building blocks don't I need to document or specify? |
+|-------|-------------------|
+|[Question C-5-13](#q-C-5-13) |What kind of building blocks shall I document or specify? |
 |-------|-------------------|
 |[Question C-6-1](#q-C-6-1) |What is a runtime scenario? |
 |-------|-------------------|
@@ -144,9 +146,11 @@
 |-------|-------------------|
 |[Question C-8-2](#q-C-8-2) |Our arc42 section 8 (on concepts) is a melting pot of information we couldn't put elsewhere? How can we keep an overview? |
 |-------|-------------------|
-|[Question C-8-3](#q-C-8-3) |How shall I describe my business-/domain model? |
+|[Question C-8-3](#q-C-8-3) |How shall I deal with the multitude of potentially crosscutting topics? |
 |-------|-------------------|
-|[Question C-8-4](#q-C-8-4) |Are there any general rules how to describe a _concept_? |
+|[Question C-8-4](#q-C-8-4) |How shall I describe my business-/domain model? |
+|-------|-------------------|
+|[Question C-8-5](#q-C-8-5) |Are there any general rules how to describe a _concept_? |
 |-------|-------------------|
 |[Question C-9-1](#q-C-9-1) |What kind of decisions shall I describe or document? |
 |-------|-------------------|
@@ -162,7 +166,7 @@
 |-------|-------------------|
 |[Question C-10-3](#q-C-10-3) |What is a _quality tree_? |
 |-------|-------------------|
-|[Question C-10-4](#q-C-10-4) |Are there samples for quality scenarios? |
+|[Question C-10-4](#q-C-10-4) |Are there examples for quality scenarios? |
 |-------|-------------------|
 |[Question C-11-1](#q-C-11-1) |What are _risks_ and _technical debt_? |
 |-------|-------------------|
@@ -180,6 +184,10 @@
 |-------|-------------------|
 |[Question D-6](#q-D-6) |How can I improve the _understandability_ of my diagrams/models? |
 |-------|-------------------|
+|[Question D-7](#q-D-7) |How can I reduce the number of elements in a component /building block diagram? |
+|-------|-------------------|
+|[Question D-8](#q-D-8) |How can I improve the consistency of models? |
+|-------|-------------------|
 |[Question E-1](#q-E-1) |Does arc42 work with Scrum, Kanban or other lean/agile approaches? |
 |-------|-------------------|
 |[Question E-2](#q-E-2) |Shall our team make arc42 part of the definition of done (DoD)? |
@@ -190,11 +198,9 @@
 |-------|-------------------|
 |[Question E-5](#q-E-5) |In agile projects, what kind of information shall we write down and what shall we communicate orally? |
 |-------|-------------------|
-|[Question E-6](#q-E-6) |In agile projects, can we skip documentation for a while and focus only on implementing? |
+|[Question E-6](#q-E-6) |In agile projects, can we skip (defer) documentation for a while and focus only on implementing? |
 |-------|-------------------|
 |[Question E-7](#q-E-7) |What are the most important tips for documentation in agile projects? |
-|-------|-------------------|
-|[Question E-8](#q-E-8) |How can we use arc42 with multiple Scrum-teams and Scrum-of-Scrums? |
 |-------|-------------------|
 |[Question F-1](#q-F-1) |What tools are well-suited for arc42? |
 |-------|-------------------|
@@ -214,7 +220,11 @@
 |-------|-------------------|
 |[Question F-9](#q-F-9) |How can I create diagrams in Confluence? |
 |-------|-------------------|
-|[Question G-1](#q-G-1) |How shall I version architecture documentation? |
+|[Question F-10](#q-F-10) |What tools shall I use for sequence diagrams? |
+|-------|-------------------|
+|[Question F-10](#q-F-11) |Can I use [PlantUML](http://plantuml.com/) for building block / component diagrams? |
+|-------|-------------------|
+|[Question G-1](#q-G-1) |Shall I _version control_ our architecture documentation? |
 |-------|-------------------|
 |[Question G-2](#q-G-2) |We cannot use version control for documents. What to do? |
 |-------|-------------------|
